@@ -1,0 +1,81 @@
+1.What are the two values of the Boolean data type? How do you write them?
+True and False, we write it in the same form as True and false. Eg-True+true will be give me output as 2 because in system True means 1.
+2. What are the three different types of Boolean operators?
+AND,OR,NOT
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+Operator A	Operator B	Logical OR Result
+True	True	True
+True	False	True
+False	True	True
+False	False	False
+Operator A	Operator B	Logical AND result
+True	True	True
+True	False	False
+False	True	False
+False	False	False
+ 
+Operator A	Logical NOT Result
+True	False
+False	True
+4. What are the values of the following expressions?
+(5 > 4) and (3 == 5)
+not (5 > 4)
+False
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+False
+(True and True) and (True == False)
+(not False) or (not True)
+True
+5. What are the six comparison operators? 
+Python has six comparison operators: less than ( < ), less than or equal to ( <= ), greater than ( > ), greater than or equal to ( >= ), equal to ( == ), and not equal to ( != ).
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+ The “=” is an assignment operator is used to assign the value on the right to the variable on the left. The '==' operator checks whether the two given operands are equal or not. If so, it returns true. Otherwise it returns false.
+Ex- 4==5
+ o/p-False
+i=5:
+assigning value for i as 5.
+
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print('eggs')
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+print('spam')
+1st block-print(“eggs”)
+    2nd block-print(“bacon”)
+    3rd block- print(“ham”)
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+ spam=int(input())
+if spam==1:
+        print("hello")
+elif spam==2:
+        print("howdy")
+else:
+        print("greetings")
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+ctrl+c
+10. How can you tell the difference between break and continue?
+The Python break statement stops the loop in which the statement is placed. A Python continue statement skips a single iteration in a loop.
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+range(10) means it will print numbers from 1 to 9 excluding 10.
+range(0,10) means it will print numbers from 0 to 9 excluding 10.
+range(0,10,1) is same as range(0,10) , the only difference is it has assigned the jump value as 1 , if nothing is mentioned in jump value it means the jump value will be 1 only. 
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+#while loop method
+ i=1
+while i<=10:
+    print(i)
+    i=i+1
+#for loop method
+for i in range(1,11):
+             print(i)
+ 
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+by using function-
+spam.bacon()
